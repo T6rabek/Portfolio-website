@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.nav img {
+    width: 100px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    animation: bounceRotate 4s infinite ease-in-out;
+}
+
+@keyframes bounceRotate {
+    0% {
+        transform: scale(1) rotate(0deg); 
+    }
+    10% {
+        transform: scale(1.1) rotate(36deg); 
+    }
+    20% {
+        transform: scale(1) rotate(72deg);
+    }
+    30% {
+        transform: scale(1.1) rotate(108deg); 
+    }
+    40% {
+        transform: scale(1) rotate(144deg); 
+    }
+
+    50% {
+        transform: scale(1.1) rotate(180deg); 
+    }
+
+    60% {
+        transform: scale(1) rotate(216deg); 
+    }
+
+    70% {
+        transform: scale(1.1) rotate(252deg); 
+    }
+
+    80% {
+        transform: scale(1) rotate(288deg); 
+    }
+
+    90% {
+        transform: scale(1.1) rotate(324deg); 
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg); 
+    }
+    
+}
+
+
+.nav {
+    background-color: #A5BEA4;
+    padding: 0;
+    height: 70px;
+}
+.nav ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    margin-right: 20px; 
+    transform: translateY(-80px);
+    color: #fff;
+    clear: both;
+    align-items: center;
+}
+
+.nav ul li{
+    margin: 30px;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a5bea418
+    
+}
+ 
+.hero-text{
+    transform: translate(100px, -100px);
+    font-size: 3rem;
+    margin-right: -200px;
+}
+
+.name{
+    font-size: 5rem;
+    transform: translate(0, -50px);
+    border: 2px solid #A5BEA4;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.name:hover{
+    color: #fff;
+   
+    background-color: #A5BEA4;
+}
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    width: 750px;
+    height: 500px;
+    background: #a5bea418;
+    margin-left: 100px;
+    margin-top: 300px;
+    margin-right: 700px;
+    
+  }
+  
+  .clip {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+  }
+  
+  .clip1 {
+    background: url(photos/image.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
+   
+  }
+  
+ .clip2{
+    background: url(photos/3to4.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+ }
+  .clip3 {
+    background: url(photos/ibrat.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+  }
+  
+  .container:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  
+  .container .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+ 
